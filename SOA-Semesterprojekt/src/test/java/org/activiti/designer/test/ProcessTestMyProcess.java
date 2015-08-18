@@ -16,8 +16,8 @@ import org.junit.Rule;
 import org.junit.Test;
 
 public class ProcessTestMyProcess {
-
-	private String filename = "C:\\Users\\Michael\\Workspaces\\java-ee2\\SOA-Semesterprojekt\\src\\main\\java\\TestProcess.bpmn";
+	
+	private String filename = "src\\main\\java\\TestProcess.bpmn";
 
 	@Rule
 	public ActivitiRule activitiRule = new ActivitiRule();
@@ -25,16 +25,17 @@ public class ProcessTestMyProcess {
 	@Test
 	public void startProcess() throws Exception {
 		RepositoryService repositoryService = activitiRule.getRepositoryService();
-		repositoryService.createDeployment().addInputStream("myProcess.bpmn20.xml",
-				new FileInputStream(filename)).deploy();
+		repositoryService.createDeployment().addInputStream("myProcess.bpmn20.xml",new FileInputStream(filename)).deploy();
 		RuntimeService runtimeService = activitiRule.getRuntimeService();
 		Map<String, Object> variableMap = new HashMap<String, Object>();
 		variableMap.put("name", "Activiti");
 		ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("myProcess", variableMap);
+		
 		assertNotNull(processInstance.getId());
 		System.out.println("id " + processInstance.getId() + " "
 				+ processInstance.getProcessDefinitionId());
 		
+		//neu
 		ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
 		
 		System.out.println(processEngine.getName());

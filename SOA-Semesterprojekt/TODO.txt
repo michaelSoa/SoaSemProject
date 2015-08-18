@@ -1,10 +1,33 @@
+Git Chat:
+
+MichaelKing: https://www.youtube.com/watch?v=UTl9LJ_Ob98
+
 TODOS:
 
+TAs: TA5 BUM
 
-FAs:
+Gruppen: 	Einkäufer
+			Lieferant
+			Buchhalter
+			Auftraggeber
+			Rechnungsprüfer
+			System
+..
+FAs:	Rechnungseingang ?
+		Lieferschein Empfangen FA?
+		Rechnungsprüfung FA?
+..
+					Must: FA15+F16 Optional: FA17, FA18
+Workflow idee:		start: Buchhaltung - Rechnungsempfänger scanned ein FA11, Anmerkung, keine anmerkung, weitersendung an Rechnungsprüfer, akzeptiert?, ende
+		
+Idee:	Dao - Rechnung ...
+		Java Klassen: Rechnung, Lieferschein, ...
 
 
-TAs:4?
+Versions-Archiv:
+
+Workflow 1 ... Michael -19.08.2015
 
 
-....
+
+
