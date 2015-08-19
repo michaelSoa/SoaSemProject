@@ -32,8 +32,7 @@ public class ProcessTestMyProcess {
 		ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("myProcess", variableMap);
 		
 		assertNotNull(processInstance.getId());
-		System.out.println("id " + processInstance.getId() + " "
-				+ processInstance.getProcessDefinitionId());
+		System.out.println("id " + processInstance.getId() + " "+ processInstance.getProcessDefinitionId());
 		
 		//neu
 		ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();

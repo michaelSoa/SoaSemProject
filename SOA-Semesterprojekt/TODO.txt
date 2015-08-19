@@ -26,7 +26,10 @@ Idee:	Dao - Rechnung ...
 
 Versions-Archiv:
 
-Workflow 1 ... Michael -19.08.2015
+Workflow 1: RechnungErstellen + Anmerkung	-Michael	-19.08.2015
+Html-Formen									-Michael	-19.08.2015
+Junit test zum Workflow 1					-Michael	-19.08.2015 (funktioniert nicht viel)
+
 
 
 
